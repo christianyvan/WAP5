@@ -1,0 +1,30 @@
+OC\WebAgencyBundle\Entity\Post:
+    type: entity
+    table: null
+    repositoryClass: OC\WebAgencyBundle\Repository\PostRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        title:
+            type: string
+            length: 255
+        name:
+            type: string
+            length: 255
+        content:
+            type: text
+        email:
+            type: string
+            length: 255
+        image:
+            type: string
+            length: 255
+        date:
+            type: datetime
+        isPosted:
+            type: boolean
+    lifecycleCallbacks: {  }
